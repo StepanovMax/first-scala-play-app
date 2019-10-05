@@ -1,26 +1,14 @@
+@import tags._
 @(products: Seq[String])
 
-@main("Welcome to Play") {
+@main("Products page") {
   <div class="">
     <h1 class="">
       Products page
     </h1>
 
-    <h3>@products.mkString(", ")</h3>
+    @menu()
 
-    <ul class="">
-      <li class="">
-        <a href="/">Home</a>
-      </li>
-      <li class="">
-        <a href="/products">Products</a>
-      </li>
-      <li class="">
-        <a href="/redirect">Redirect</a>
-      </li>
-      <li class="">
-        <a href="/contacts">Contacts</a>
-      </li>
-    </ul>
+    @productsIterator(products)
   </div>
 }
