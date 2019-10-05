@@ -1,13 +1,11 @@
 @import tags._
 @(products: Seq[String])
 
-@main("Products page") {
+@mainLayout(title="Products page") {
   <div class="">
     <h1 class="">
       Products page
     </h1>
-
-    @menu()
 
     @productsIterator(products)
   </div>
