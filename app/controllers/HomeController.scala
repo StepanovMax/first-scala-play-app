@@ -4,6 +4,7 @@ import javax.inject._
 import play.api._
 import play.api.mvc._
 
+
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
@@ -34,5 +35,9 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
   def listProducts() = Action {
     Ok(views.html.products(productMap.values.toSeq))
+  }
+
+  def product(prodType: String, prodNum: Int) = Action {
+    Ok(s"Product type is : $prodType, product number is $prodNum")
   }
 }

@@ -1,0 +1,19 @@
+@import tags._
+@(tasks: Seq[String])
+
+@mainLayout(title="Task List") {
+  <div class="">
+    <h1 class="">
+      Tasks List
+    </h1>
+
+    <ul>
+      @for(task <- tasks) {
+        <li>
+          @task
+        </li>
+      }
+    </ul>
+
+  </div>
+}
