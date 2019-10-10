@@ -7,7 +7,21 @@
       Login page
     </h1>
 
-    <form method="get" action="validateLogin1">
+    <h3 class="">
+      GET
+    </h3>
+
+    <form method="get" action="/validateGET1">
+      Username: <input type="text" name="username">
+      Password: <input type="password" name="password">
+      <input type="submit">
+    </form>
+
+    <h3 class="">
+      POST
+    </h3>
+
+    <form method="post" action="@routes.TaskList1.validatePOST1()">
       Username: <input type="text" name="username">
       Password: <input type="password" name="password">
       <input type="submit">
