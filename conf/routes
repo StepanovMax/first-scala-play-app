@@ -40,3 +40,6 @@ GET     /assets/*file                                 controllers.Assets.version
 
 + nocsrf
 POST    /createUser1                                  controllers.TaskList1.createUser
+
+# Test
+GET     /testscala                                    controllers.TestScala.testscala

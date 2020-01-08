@@ -113,6 +113,13 @@
             "C:\\Users\\User\\.ivy2\\cache\\org.codehaus.plexus\\plexus-container-default\\jars\\plexus-container-default-1.0-alpha-9-stable-1.jar",
             "C:\\Users\\User\\.ivy2\\cache\\org.codehaus.plexus\\plexus-utils\\jars\\plexus-utils-3.0.18.jar",
             "C:\\Users\\User\\.ivy2\\cache\\org.codehaus.plexus\\plexus-io\\jars\\plexus-io-2.2.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\scala_2.12\\sbt_1.0\\com.typesafe.sbt\\sbt-less\\jars\\sbt-less-1.1.2.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\org.webjars\\less-node\\jars\\less-node-2.7.2.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\org.webjars\\mkdirp\\jars\\mkdirp-0.5.0.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\org.webjars.npm\\clean-css\\jars\\clean-css-4.0.5.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\org.webjars.npm\\source-map\\jars\\source-map-0.5.7.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\org.webjars.npm\\less-plugin-clean-css\\jars\\less-plugin-clean-css-1.5.1.jar",
+            "C:\\Users\\User\\.ivy2\\cache\\org.webjars\\es6-promise-node\\jars\\es6-promise-node-2.1.1.jar",
             "C:\\Users\\User\\.ivy2\\cache\\org.scala-sbt\\sbt\\jars\\sbt-1.2.8.jar",
             "C:\\Users\\User\\.ivy2\\cache\\org.scala-sbt\\main_2.12\\jars\\main_2.12-1.2.8.jar",
             "C:\\Users\\User\\.ivy2\\cache\\org.scala-sbt\\logic_2.12\\jars\\logic_2.12-1.2.8.jar",
@@ -222,8 +229,8 @@
                 "import _root_.scala.xml.{TopScope=>$scope}",
                 "import _root_.sbt._",
                 "import _root_.sbt.Keys._",
-                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.play.sbt.Play.autoImport._, _root_.play.sbt.PlayService.autoImport._, _root_.play.sbt.routes.RoutesCompiler.autoImport._, _root_.play.twirl.sbt.SbtTwirl.autoImport._, _root_.com.typesafe.sbt.SbtNativePackager.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin.autoImport._, _root_.com.typesafe.sbt.packager.debian.DebianPlugin.autoImport._, _root_.com.typesafe.sbt.packager.docker.DockerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin.autoImport._, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin.autoImport._, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin.autoImport._, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin.autoImport._, _root_.com.lightbend.sbt.javaagent.JavaAgent.autoImport._, _root_.com.typesafe.sbt.web.SbtWeb.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsEngine.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsTask.autoImport._, _root_.giter8.ScaffoldPlugin.autoImport._",
-                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.scala.meta.metals.MetalsPlugin, _root_.play.sbt.Play, _root_.play.sbt.PlayAkkaHttp2Support, _root_.play.sbt.PlayAkkaHttpServer, _root_.play.sbt.PlayFilters, _root_.play.sbt.PlayJava, _root_.play.sbt.PlayLayoutPlugin, _root_.play.sbt.PlayLogback, _root_.play.sbt.PlayMinimalJava, _root_.play.sbt.PlayNettyServer, _root_.play.sbt.PlayScala, _root_.play.sbt.PlayService, _root_.play.sbt.PlayWeb, _root_.play.sbt.routes.RoutesCompiler, _root_.play.sbt.test.MediatorWorkaroundPlugin, _root_.play.twirl.sbt.SbtTwirl, _root_.com.typesafe.sbt.SbtNativePackager, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin, _root_.com.typesafe.sbt.packager.debian.DebianDeployPlugin, _root_.com.typesafe.sbt.packager.debian.DebianPlugin, _root_.com.typesafe.sbt.packager.debian.JDebPackaging, _root_.com.typesafe.sbt.packager.docker.DockerPlugin, _root_.com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmDeployPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalDeployPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsDeployPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin, _root_.com.lightbend.sbt.javaagent.JavaAgent, _root_.com.lightbend.sbt.javaagent.JavaAgentPackaging, _root_.com.typesafe.sbt.web.SbtWeb, _root_.com.typesafe.sbt.jse.SbtJsEngine, _root_.com.typesafe.sbt.jse.SbtJsTask, _root_.giter8.ScaffoldPlugin"
+                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.play.sbt.Play.autoImport._, _root_.play.sbt.PlayService.autoImport._, _root_.play.sbt.routes.RoutesCompiler.autoImport._, _root_.play.twirl.sbt.SbtTwirl.autoImport._, _root_.com.typesafe.sbt.SbtNativePackager.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin.autoImport._, _root_.com.typesafe.sbt.packager.debian.DebianPlugin.autoImport._, _root_.com.typesafe.sbt.packager.docker.DockerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin.autoImport._, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin.autoImport._, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin.autoImport._, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin.autoImport._, _root_.com.lightbend.sbt.javaagent.JavaAgent.autoImport._, _root_.com.typesafe.sbt.web.SbtWeb.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsEngine.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsTask.autoImport._, _root_.giter8.ScaffoldPlugin.autoImport._, _root_.com.typesafe.sbt.less.SbtLess.autoImport._",
+                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.scala.meta.metals.MetalsPlugin, _root_.play.sbt.Play, _root_.play.sbt.PlayAkkaHttp2Support, _root_.play.sbt.PlayAkkaHttpServer, _root_.play.sbt.PlayFilters, _root_.play.sbt.PlayJava, _root_.play.sbt.PlayLayoutPlugin, _root_.play.sbt.PlayLogback, _root_.play.sbt.PlayMinimalJava, _root_.play.sbt.PlayNettyServer, _root_.play.sbt.PlayScala, _root_.play.sbt.PlayService, _root_.play.sbt.PlayWeb, _root_.play.sbt.routes.RoutesCompiler, _root_.play.sbt.test.MediatorWorkaroundPlugin, _root_.play.twirl.sbt.SbtTwirl, _root_.com.typesafe.sbt.SbtNativePackager, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin, _root_.com.typesafe.sbt.packager.debian.DebianDeployPlugin, _root_.com.typesafe.sbt.packager.debian.DebianPlugin, _root_.com.typesafe.sbt.packager.debian.JDebPackaging, _root_.com.typesafe.sbt.packager.docker.DockerPlugin, _root_.com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmDeployPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalDeployPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsDeployPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin, _root_.com.lightbend.sbt.javaagent.JavaAgent, _root_.com.lightbend.sbt.javaagent.JavaAgentPackaging, _root_.com.typesafe.sbt.web.SbtWeb, _root_.com.typesafe.sbt.jse.SbtJsEngine, _root_.com.typesafe.sbt.jse.SbtJsTask, _root_.giter8.ScaffoldPlugin, _root_.com.typesafe.sbt.less.SbtLess"
             ]
         },
         "test" : {
@@ -1372,6 +1379,83 @@
                         {
                             "name" : "plexus-io",
                             "path" : "C:\\Users\\User\\.ivy2\\cache\\org.codehaus.plexus\\plexus-io\\jars\\plexus-io-2.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.sbt",
+                    "name" : "sbt-less",
+                    "version" : "1.1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "sbt-less",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\scala_2.12\\sbt_1.0\\com.typesafe.sbt\\sbt-less\\jars\\sbt-less-1.1.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars",
+                    "name" : "less-node",
+                    "version" : "2.7.2",
+                    "artifacts" : [
+                        {
+                            "name" : "less-node",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\org.webjars\\less-node\\jars\\less-node-2.7.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars",
+                    "name" : "mkdirp",
+                    "version" : "0.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "mkdirp",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\org.webjars\\mkdirp\\jars\\mkdirp-0.5.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "clean-css",
+                    "version" : "4.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "clean-css",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\org.webjars.npm\\clean-css\\jars\\clean-css-4.0.5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "source-map",
+                    "version" : "0.5.7",
+                    "artifacts" : [
+                        {
+                            "name" : "source-map",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\org.webjars.npm\\source-map\\jars\\source-map-0.5.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "less-plugin-clean-css",
+                    "version" : "1.5.1",
+                    "artifacts" : [
+                        {
+                            "name" : "less-plugin-clean-css",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\org.webjars.npm\\less-plugin-clean-css\\jars\\less-plugin-clean-css-1.5.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars",
+                    "name" : "es6-promise-node",
+                    "version" : "2.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "es6-promise-node",
+                            "path" : "C:\\Users\\User\\.ivy2\\cache\\org.webjars\\es6-promise-node\\jars\\es6-promise-node-2.1.1.jar"
                         }
                     ]
                 },
